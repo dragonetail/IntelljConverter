@@ -1,0 +1,49 @@
+<idea-plugin>
+  <id>com.github.dragonetail.intellj.converter</id>
+  <name>IntelljConverter</name>
+  <version>1.0</version>
+  <vendor email="dragonetail@gmail.com" url="https://github.com/dragonetail">Dragonetail</vendor>
+
+  <description><![CDATA[
+      Provide setter/getter methods generation for model/DTO converter.
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Noop.
+      Noop.
+      Noop.
+      Noop.
+      Noop.
+      Noop.
+      Noop.
+      Noop.
+      Noop.
+      Noop.
+      Noop.
+      Noop.
+      Noop.
+      Noop.
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+  <depends>com.intellij.modules.java</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <codeInsight.template.postfixTemplateProvider language="JAVA"
+                                                  implementationClass="postfix.YokePostfixTemplateProvider"/>
+<!--    <defaultLiveTemplatesProvider implementation="live.YokeLiveTemplateProvider"/>-->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>

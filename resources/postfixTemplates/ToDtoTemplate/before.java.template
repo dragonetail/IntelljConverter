@@ -1,0 +1,7 @@
+public class Foo {
+  String bar;
+  int age;
+  void foo(Object object) {
+      <spot>o</spot>$key
+  }
+}
